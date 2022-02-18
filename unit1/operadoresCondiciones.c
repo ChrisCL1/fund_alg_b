@@ -39,5 +39,17 @@ int mainI(int agc, char** argv){
         //robot.stop(x_coord, y_coord);
     }
 
+
+    //e.g.
+    int priceProduct = 500;
+    int userMoney = argv[1];
+    bool hasUserMoney = (userMoney >= priceProduct);
+
+    if (hasUserMoney){
+        printf("The product was sended!");
+    }else{
+        printf("The product was rejected");
+    }
+
     return 0;
 }
