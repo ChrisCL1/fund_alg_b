@@ -22,6 +22,13 @@ int main(int argc, char** argv){ // ["./activity6", "10", "20"]
     i = 1;
     while(i <= rango2){
         printf("iterador: %d\n", i);
+        int number = 1;
+        bool isDividedByTwo = (number % 2 == 0);
+
+        if (!isDividedByTwo)printf("odd number: %d\n", number);
+        
+        i = i + 1;
+        sleep(1000);
     }
 
     return 0;
